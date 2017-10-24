@@ -1,0 +1,127 @@
+
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#vwLogo{
+    position: absolute;
+    top:0;
+    left:0;
+    padding:10px;
+    z-index: 1;    
+}
+
+#beetleConvertible{
+    position: absolute;
+    top: 100px;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+#swipeToSpin{
+    position: absolute;
+    top: 230px;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+#beetleBg{
+    position: relative;
+    top: 0;
+    left: 0;
+    height:700px;
+    width:400px;
+    left:0;
+}
+#beetleBgBottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.vw360img{
+    max-height: 700px;
+    max-width: 650px;
+    position: absolute;
+    top: 100px;
+    left: -30%;
+}
+
+#rotate_arrow_left{
+    position: absolute;
+    top: 415px;
+    left: 5px;
+    opacity: 0.5;
+}
+#rotate_arrow_right{
+    position: absolute;
+    top: 415px;
+    right: 5px;
+    opacity: 0.5;
+}
+
+.color-chooser{
+    top: 460px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.color-chooser > img {    
+    margin-right: -25px;
+}
+
+#selectColor{
+    top: 560px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.book-a-test-drive{
+    top: 600px;
+    position: absolute;
+}
+
+#testDriveText{
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    left: 80px;
+}
+
+#testDriveBg{
+    position: absolute;
+    top: 0;
+    left: 55px;
+    z-index: 1;
+}
+
+#infoHeadlight{
+    display:none;
+    position: absolute;
+    top:342px;
+    left:120px;
+}
+#infoBumper{
+    display:none;
+    position: absolute;
+    top: 385px;
+    left: 190px;
+}
+#infoSpoiler{
+    display:none;
+    position: absolute;
+    top: 310px;
+    left: 150px;
+}
+
+.info{
+    font-family: 'Arial',sans-serif;
+    font-size: 10px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/tooltipster.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/themes/tooltipster-shadow.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <img id="vwLogo" src="images/extras/logo.png" />
+        <img id="beetleConvertible" src="images/extras/beetle_convertible_open_it_up.png" />
+        <img id="swipeToSpin" class="will-hide" src="images/extras/swipe_to_spin.png" />
+        <img id="beetleBg" src="images/extras/beetle_bg.png" />
+        <img id="beetleBgBottom" src="images/extras/beetle_bg_bottom.png" />
+        <img id="vw360img" />
+        <img id="rotate_arrow_left" class="will-hide" src="images/extras/rotate_arrow_left.png" />
+        <img id="rotate_arrow_right" class="will-hide" src="images/extras/rotate_arrow_right.png" />
+        <div class="color-chooser">
+            <img id="red_button" data-color="red" src="images/extras/red_button.png" />
+            <img id="blue_button" data-color="blue" src="images/extras/blue_button.png" />
+            <img id="white_button" data-color="white" src="images/extras/white_button.png" />
+        </div>
+        <img id="selectColor" src="images/extras/select_a_color.png" />
+        <div class="book-a-test-drive">
+            <img id="testDriveText" src="images/extras/book_a_test_drive.png" />
+            <img id="testDriveBg" src="images/extras/rectangle.png" />
+        </div>
+
+        <img id="infoHeadlight" width="24px" height="24px" src="images/extras/info.png" />
+        <img id="infoBumper" width="24px" height="24px" src="images/extras/info.png" />
+        <img id="infoSpoiler" width="24px" height="24px" src="images/extras/info.png" />
+    </div>
+
+</body>
+<script type="text/javascript">
+    $(document).ready(function () {
+        let imagePath = "images/white/";
+        
+        $(".color-chooser img").click(function () {
+            imagePath = "images/" + $(this).data("color") + "/";      
+
+            $("#vw360img").vc3dEye({
+                imagePath: imagePath, 
+                totalImages: 36, 
+                imageExtension: "png" 
+            });
+        });
+
+        $('#white_button').trigger('click');
+
+
+    });
+
+</script>
+
+</html>
